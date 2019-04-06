@@ -6,34 +6,51 @@
     <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
     <meta charset="utf-8">
     <title>Yasser Noori | Pongnite</title> 
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-1618362557885318",
+    enable_page_level_ads: true
+  });
+</script>
     <style>
 @import url("https://fonts.googleapis.com/css?family=Raleway");
- html, body {
+ html, body, canvas {
 	 font-family: 'raleway', monospace;
 	 background: #212121;
-	 height: 100%;
+	 border: none;
 }
+	    canvas {
+		  z-index: -50;  
+	    }
+	    
  .container {
-	 height: 100%;
-	 width: 100%;
-	 justify-content: center;
-	 align-items: center;
-	 display: flex;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+	 
 }
  .text {
 	 font-weight: 100;
-	 font-size: 28px;
-	 color: #fafafa;
+	 font-size: 40px;
+	 color: black;
 }
  .dud {
 	 color: #757575;
 }
+	    
     </style>
   </head>
   <body>
     <script src="/socket.io/socket.io.js"></script>
     <script src="//code.jquery.com/jquery-1.11.1.js"></script>
     <script>
+window.onload = function() {
+        window.focus();
+	alert('(c) Yasser Noori, 2018 \n \n Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions: \n \n The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software. \n \n THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.');
+	alert("Google ads by Raiyan Kamran");
 // ——————————————————————————————————————————————————
 // TextScramble
 // ——————————————————————————————————————————————————
@@ -56,7 +73,7 @@ class TextScramble {
       this.queue.push({ from, to, start, end })
     }
     cancelAnimationFrame(this.frameRequest)
-    this.frame = 0
+    this.frame = 030
     this.update()
     return promise
   }
@@ -94,25 +111,30 @@ class TextScramble {
 // Example
 // ——————————————————————————————————————————————————
 const phrases = [
-  'Yasser Noori | Pongnite',
-  'Multi-Player PvP',
-  'PONGNITE'
+  "Yasser Noori | Pongnite",
+  "Multi-Player PVP",
+  "PONGNITE (Mode: Huge Ball)",
+  "New Modes Coming &quot;Soon&quot;. . ."
 ]
 const el = document.querySelector('.text')
 const fx = new TextScramble(el)
 let counter = 0
 const next = () => {
   fx.setText(phrases[counter]).then(() => {
-    setTimeout(next, 1500)
+    setTimeout(next, 1700)
   })
   counter = (counter + 1) % phrases.length
 }
 next()
+    };
     </script>
+	  
     <span id ='test'></span>
+  
     <div class="container">
-        <div class="text"></div>
+        <div style="position:absolute;top:20%;" class="text"></div>
     </div>
+	  
 <script>
 $(function(){
   var GAME_SETTINGS = null;
@@ -220,17 +242,17 @@ $(function(){
       start.button1.initialize(canvas,ctx,GAME_SETTINGS,{
         text:{
           x: undefined,
-          y: 310,
+          y: 625,
           size: 30,
           font: "raleway",
           textBaseline: "middle",
           textAlign: "center",
           lineWidth: 2,
           message: "Ready",
-          color: {fill:"white", stroke:undefined},
+          color: {fill:"black", stroke:"black"},
           colorData: {
-            default: {fill:"white", stroke:undefined},
-            mouseover: {fill:"white", stroke:undefined}
+            default: {fill:"black", stroke:"black"},
+            mouseover: {fill:"grey", stroke:"grey"}
           }
         },
         rect: {
@@ -241,8 +263,8 @@ $(function(){
           lineWidth: 2,
           color: {fill:undefined, stroke:undefined},
           colorData: {
-            default: {fill:"black", stroke:"#d6d6d6"},
-            mouseover: {fill:"grey", stroke:"#d6d6d6"}
+            default: {fill:undefined, stroke:"black"},
+            mouseover: {fill:undefined, stroke:"black"}
           }
         },
         animation: {
@@ -296,9 +318,9 @@ $(function(){
           lineWidth: 2,
           message: "Waiting For Your Victim...",
           globalAlpha: undefined,
-          color: {fill: "#000000", stroke: "#d6d6d6"},
+          color: {fill: "black", stroke: "black"},
           colorData: {
-            default: {fill: "#000000", stroke: "#d6d6d6"}
+            default: {fill: "black", stroke: "black"}
           }
         },
         animation: {
@@ -361,9 +383,9 @@ $(function(){
           lineWidth: 2,
           message: message,
           globalAlpha: undefined,
-          color: {fill: "#000000", stroke: "#d6d6d6"},
+          color: {fill: "black", stroke: "black"},
           colorData: {
-            default: {fill: "#000000", stroke: "#d6d6d6"}
+            default: {fill: "black", stroke: "black"}
           }
         }
       });
@@ -375,12 +397,12 @@ $(function(){
           font: "raleway",
           textBaseline: "middle",
           textAlign: "center",
-          lineWidth: 5,
-          message: "Get Ready!",
+          lineWidth: 1,
+          message: "Players Preparing For Match",
           globalAlpha: undefined,
-          color: {fill: "#ffffff", stroke:undefined},
+          color: {fill: "black", stroke:"black"},
           colorData: {
-            default: {fill: "#ffffff", stroke:undefined}
+            default: {fill: "grey", stroke:"grey"}
           }
         }
       });
@@ -388,13 +410,13 @@ $(function(){
         rect: {
           x: xPos,
           y: GAME_SETTINGS.HEIGHT/2+40,
-          width: 150,
+          width: 130,
           height: 40,
           lineWidth: 2,
           color: {fill:undefined, stroke:undefined},
           colorData: {
-            default: {fill: "#555555", stroke: "#d6d6d6"},
-            mouseover: {fill: "#000000", stroke: "#d6d6d6"}
+            default: {fill:undefined, stroke: "black"},
+            mouseover: {fill:undefined, stroke: "black"}
           }
         },
         text:{
@@ -405,11 +427,11 @@ $(function(){
           textBaseline: "middle",
           textAlign: "center",
           lineWidth: undefined,
-          message: "Start",
+          message: "START",
           color: {fill:undefined, stroke:undefined},
           colorData: {
-            default: {fill:"#ffffff", stroke:undefined},
-            mouseover: {fill:"#ffffff", stroke:undefined}
+            default: {fill:"black", stroke:"black"},
+            mouseover: {fill:"grey", stroke:"grey"}
           }
         },
         animation: {
@@ -548,7 +570,7 @@ $(function(){
           textBaseline: "middle",
           textAlign: "center",
           lineWidth: undefined,
-          message: "Returning To Lobby...",
+          message: "Returning To Lobby. . .",
           globalAlpha: undefined,
           color: {fill: undefined, stroke: undefined},
           colorData: {default:{fill: "#000000", stroke: undefined}}
