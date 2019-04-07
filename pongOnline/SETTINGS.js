@@ -1,6 +1,6 @@
 var SETTINGS = {
   VER : "2.850",
-  WIDTH : 600,
+  WIDTH : 800,
   HEIGHT : 700,
   BORDER_WIDTH : 10,
   BACKGROUND_COLOR : "#FFFFFF",
