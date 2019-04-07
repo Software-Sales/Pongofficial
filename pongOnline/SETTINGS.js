@@ -5,8 +5,8 @@ var SETTINGS = {
   BORDER_WIDTH : 10,
   BACKGROUND_COLOR : "#FFFFFF",
   PLAYER : {
-    WIDTH : 30,
-    HEIGHT : 1000,
+    WIDTH : 75,
+    HEIGHT : 150,
     GAP : 30
   },
   BALL : {
