@@ -5,7 +5,7 @@ var SETTINGS = {
   BORDER_WIDTH : 10,
   BACKGROUND_COLOR : "#FFFFFF",
   PLAYER : {
-    WIDTH : 1,
+    WIDTH : 30,
     HEIGHT : 1000,
     GAP : 30
   },
