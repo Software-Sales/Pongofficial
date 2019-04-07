@@ -5,8 +5,8 @@ var SETTINGS = {
   BORDER_WIDTH : 10,
   BACKGROUND_COLOR : "#FFFFFF",
   PLAYER : {
-    WIDTH : 15,
-    HEIGHT : 110,
+    WIDTH : 30,
+    HEIGHT : 30,
     GAP : 30
   },
   BALL : {
@@ -25,7 +25,7 @@ var SETTINGS = {
   EDGE_ANGLE : 6,
   STRAIGHT_ADJUST : 7,
   STRATGHT_ANGLE : 7,
-  SERVE_ANGLE : 30, 50,
+  SERVE_ANGLE : 30,
   GOAL : 20
 };
 SETTINGS.CLIENT_SETTINGS = {
