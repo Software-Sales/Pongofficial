@@ -1,5 +1,5 @@
 var SETTINGS = {
-  VER : "1.0",
+  VER : "2.850",
   WIDTH : 600,
   HEIGHT : 700,
   BORDER_WIDTH : 10,
@@ -10,8 +10,8 @@ var SETTINGS = {
     GAP : 30
   },
   BALL : {
-    WIDTH : 15,
-    HEIGHT : 15,
+    WIDTH : 25,
+    HEIGHT : 25,
   },
   NET : {
     WIDTH : 6
@@ -26,7 +26,7 @@ var SETTINGS = {
   STRAIGHT_ADJUST : 7,
   STRATGHT_ANGLE : 7,
   SERVE_ANGLE : 30,
-  GOAL : 5
+  GOAL : 20
 };
 SETTINGS.CLIENT_SETTINGS = {
   VER : SETTINGS.VER,
