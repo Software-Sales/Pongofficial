@@ -2,7 +2,7 @@ var SETTINGS = require("../SETTINGS.js");
 var BaseObejct = require("./BaseObject.js");
 
 var LEFT = 37, UP = 38, RIGHT = 39, DOWN = 40;
-var UNIT = 2;
+var UNIT = 5;
 
 function Player(id,position){
   BaseObejct.call(this);
