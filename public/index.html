@@ -18,7 +18,7 @@ canvas {
 	 border: none;
 }
 	    
-	  
+	    
 .sidenav {
   height: 100%;
   width: 160px;
@@ -31,27 +31,21 @@ canvas {
   padding-top: 20px;
 }
 
-.sidenav a {
-  padding: 6px 8px 6px 16px;
-  text-decoration: none;
-  font-size: 25px;
-  color: #818181;
-  display: block;
+.sidenav2 {
+  height: 100%;
+  width: 160px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 20px;
 }
-
-.sidenav a:hover {
-  color: #f1f1f1;
-}
-
-.main {
-  margin-left: 160px; /* Same as the width of the sidenav */
-  font-size: 28px; /* Increased text to enable scrolling */
-  padding: 0px 10px;
-}
-
+	    
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
+  .sidenav2 {padding-top: 15px;}
 }
     </style>
   </head>
@@ -70,7 +64,21 @@ canvas {
 }());
 </script>
 <script type="text/javascript" src="//cdn.chitika.net/getads.js" async></script>
-</div>	    
+</div>	
+	  
+<div class="sidenav2">
+<script type="text/javascript">
+  ( function() {
+    if (window.CHITIKA === undefined) { window.CHITIKA = { 'units' : [] }; };
+    var unit = {"calltype":"async[2]","publisher":"YasserN","width":160,"height":600,"sid":"Chitika Default"};
+    var placement_id = window.CHITIKA.units.length;
+    window.CHITIKA.units.push(unit);
+    document.write('<div id="chitikaAdBlock-' + placement_id + '"></div>');
+}());
+</script>
+<script type="text/javascript" src="//cdn.chitika.net/getads.js" async></script>
+</div>	
+	  
     <header>
         <div style="color: inherit;font-size:30px;width:100%;background:#f1f1f1;color:#000000;padding-left:50px">
 <script type="text/javascript">
