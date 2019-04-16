@@ -3,9 +3,9 @@ var BaseObejct = require("./BaseObject.js");
 
 function Spark(x,y){
   BaseObejct.call(this);
-  this.countMax = 100;
-  this.count = 100;
-  var test =5;
+  this.countMax = 150;
+  this.count = 150;
+  var test =8;
   this.xPower = -test+Math.random()*test*2;
   this.yPower = -test+Math.random()*test*2;
   this.blinkingTerm = Math.random()*5;
