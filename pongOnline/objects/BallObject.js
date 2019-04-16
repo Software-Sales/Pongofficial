@@ -191,7 +191,7 @@ function Serve(playerId,count){
   return {
     isOn:true,
     player:playerId,
-    count:count?count:800
+    count:count?count:400
   };
 }
 
