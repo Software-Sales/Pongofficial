@@ -10,7 +10,7 @@ function Ball(player0Id, player1Id){
   BaseObejct.call(this);
   this.playerIds = [player0Id,player1Id];
   this.dynamic ={};
-  this.speed = 7;
+  this.speed = 10;
   this.boostCount = 0;
   this.boostCountMax = 150;
   this.dynamic = undefined;
@@ -191,7 +191,7 @@ function Serve(playerId,count){
   return {
     isOn:true,
     player:playerId,
-    count:count?count:100
+    count:count?count:2000
   };
 }
 
