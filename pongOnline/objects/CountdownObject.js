@@ -3,7 +3,7 @@ var BaseObejct = require("./BaseObject.js");
 
 function Countdown(count,xPos,yPos,size){
   BaseObejct.call(this);
-  this.defaultCount = count?count:10;
+  this.defaultCount = count?count:15;
   this.defaultSize = size?size:40;
   this.createdAt = Date.now();
   this.status.shape = "text";
