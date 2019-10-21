@@ -11,7 +11,7 @@ var SETTINGS = {
   },
   BALL : {
     WIDTH : 15,
-    HEIGHT : 15,
+    HEIGHT : 65,
   },
   NET : {
     WIDTH : 6
