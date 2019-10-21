@@ -6,12 +6,12 @@ var SETTINGS = {
   BACKGROUND_COLOR : "#FFFFFF",
   PLAYER : {
     WIDTH : 10,
-    HEIGHT : 150,
+    HEIGHT : 100,
     GAP : 30
   },
   BALL : {
-    WIDTH : 40,
-    HEIGHT : 20,
+    WIDTH : 15,
+    HEIGHT : 15,
   },
   NET : {
     WIDTH : 6
