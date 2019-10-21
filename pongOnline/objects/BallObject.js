@@ -10,9 +10,9 @@ function Ball(player0Id, player1Id){
   BaseObejct.call(this);
   this.playerIds = [player0Id,player1Id];
   this.dynamic ={};
-  this.speed = 10;
+  this.speed = 17;
   this.boostCount = 0;
-  this.boostCountMax = 150;
+  this.boostCountMax = 950;
   this.dynamic = undefined;
   this.serve = new Serve(player0Id,-1);
   this.status.shape = "rectangle";
