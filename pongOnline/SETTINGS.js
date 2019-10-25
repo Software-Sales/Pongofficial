@@ -11,7 +11,7 @@ var SETTINGS = {
   },
   BALL : {
     WIDTH : 15,
-    HEIGHT : 65,
+    HEIGHT : 15,
   },
   NET : {
     WIDTH : 6
@@ -26,7 +26,7 @@ var SETTINGS = {
   STRAIGHT_ADJUST : 7,
   STRATGHT_ANGLE : 7,
   SERVE_ANGLE : 50,
-  GOAL : 10
+  GOAL : 20
 };
 SETTINGS.CLIENT_SETTINGS = {
   VER : SETTINGS.VER,
